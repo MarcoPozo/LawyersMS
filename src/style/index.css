@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f5f5f4;
+  --color-primary: #1c1c1e;
+  --color-primary-light: #2e2e38;
+  --color-accent: #8b5cf6;
+  --color-gold: #c5b358;
+  --color-text: #2d2d2d;
+  --color-text-secondary: #6b7280;
+  --color-border: #d1d5db;
+
+  --font-titulo: "Merriweather", serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+:root{
+  --color-bg: #f5f5f4;
+  --color-primary: #1c1c1e;
+  --color-primary-light: #2e2e38;
+  --color-accent: #8b5cf6;
+  --color-gold: #c5b358;
+  --color-text: #2d2d2d;
+  --color-text-secondary: #6b7280;
+  --color-border: #d1d5db;
+}
