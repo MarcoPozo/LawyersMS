@@ -60,7 +60,6 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            key={"mobile-menu"}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
