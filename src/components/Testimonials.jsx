@@ -6,18 +6,21 @@ const testimonios = [
     comentario:
       "Excelente servicio. Me ayudaron con un caso laboral complicado y siempre me sentí respaldada.",
     profesion: "Contadora",
+    avatar: "https://i.pravatar.cc/150?img=47",
   },
   {
     nombre: "Carlos Méndez",
     comentario:
       "Su atención fue rápida, clara y efectiva. Volvería a contratarlos sin dudarlo.",
     profesion: "Empresario",
+    avatar: "https://i.pravatar.cc/150?img=12",
   },
   {
     nombre: "Lucía Rojas",
     comentario:
       "Gracias a su asesoría pude resolver un problema familiar de forma pacífica y legal.",
     profesion: "Psicóloga",
+    avatar: "https://i.pravatar.cc/150?img=50",
   },
 ];
 
@@ -48,12 +51,24 @@ export default function Testimonials() {
               <p className="text-[var(--color-text-secondary)] mb-4 italic">
                 “{testimonio.comentario}”
               </p>
-              <h4 className="font-bold text-[var(--color-primary)]">
-                {testimonio.nombre}
-              </h4>
-              <span className="text-sm text-[var(--color-text-secondary)]">
-                {testimonio.profesion}
-              </span>
+
+              <div className="flex items-center gap-4 mt-4">
+                <img
+                  src={testimonio.avatar}
+                  alt={`Foto de ${testimonio.nombre}`}
+                  className="w-10 h-10 rounded-full object-cover border border-[var(--color-border)]"
+                />
+
+                <div>
+                  <h4 className="font-bold text-[var(--color-primary)]">
+                    {testimonio.nombre}
+                  </h4>
+
+                  <span className="text-sm text-[var(--color-text-secondary)]">
+                    {testimonio.profesion}
+                  </span>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
