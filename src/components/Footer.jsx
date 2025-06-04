@@ -1,4 +1,10 @@
 import { Link } from "react-scroll";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -67,6 +73,32 @@ export default function Footer() {
             <li>📱 +593 997 75 0258</li>
             <li>✉️ moonstudioopro@gmail.com</li>
           </ul>
+          <div className="flex justify-center md:justify-start gap-4 mt-4 text-lg">
+            <a
+              href="#"
+              className="hover:text-[var(--color-gold)] transition"
+              aria-label="Facebook">
+              <FaFacebookF />
+            </a>
+            <a
+              href="#"
+              className="hover:text-[var(--color-gold)] transition"
+              aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a
+              href="#"
+              className="hover:text-[var(--color-gold)] transition"
+              aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="#"
+              className="hover:text-[var(--color-gold)] transition"
+              aria-label="WhatsApp">
+              <FaWhatsapp />
+            </a>
+          </div>
         </div>
 
         <div>
@@ -76,7 +108,6 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>Lunes a Viernes: 08h00 - 17h00</li>
             <li>Sábado: 08h00 - 12h00</li>
-            <li>Domingo: Cerrado</li>
           </ul>
         </div>
       </div>
