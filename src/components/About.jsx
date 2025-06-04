@@ -5,8 +5,8 @@ export default function About() {
   return (
     <section
       id="nosotros"
-      className="w-full bg-[var(--color-bg)] text-[var(--color-text)] font-body px-6 py-16 sm:py-20 md:py-28">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 sm:gap-12 md:gap-20 items-center">
+      className="w-full bg-[var(--color-bg)] text-[var(--color-text)] font-body px-4 sm:px-6 py-16 sm:py-20 md:py-28">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-20 items-center">
         <motion.div
           className="w-full md:w-1/2"
           initial={{ opacity: 0, x: -40 }}
@@ -30,7 +30,7 @@ export default function About() {
             Comprometidos con tu defensa
           </h2>
 
-          <p className="text-base sm:text-lg leading-relaxed text-[var(--color-text-secondary)]">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)]">
             En LawyersMS, nuestro equipo de abogados altamente capacitados se
             dedica a brindar soluciones legales efectivas y personalizadas.
             Nuestro compromiso es defender tus derechos con integridad,

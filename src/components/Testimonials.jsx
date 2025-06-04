@@ -28,7 +28,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonios"
-      className="bg-[var(--color-bg)] text-[var(--color-text)] px-6 py-20 md:py-28 font-body">
+      className="bg-[var(--color-bg)] text-[var(--color-text)] px-4 sm:px-6 py-20 md:py-28 font-body">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -43,27 +43,26 @@ export default function Testimonials() {
           {testimonios.map((testimonio, idx) => (
             <motion.div
               key={idx}
-              className="bg-white border border-[var(--color-border)] p-6 rounded-lg shadow-md text-left"
+              className="bg-white border border-[var(--color-border)] p-6 rounded-lg shadow-md text-center md:text-left"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.2 }}
               viewport={{ once: true }}>
-              <p className="text-[var(--color-text-secondary)] mb-4 italic">
+              <p className="text-[var(--color-text-secondary)] mb-4 italic text-base sm:text-[17px]">
                 “{testimonio.comentario}”
               </p>
 
-              <div className="flex items-center gap-4 mt-4">
+              <div className="flex flex-col items-center md:flex-row md:items-center gap-4 mt-4">
                 <img
                   src={testimonio.avatar}
                   alt={`Foto de ${testimonio.nombre}`}
-                  className="w-10 h-10 rounded-full object-cover border border-[var(--color-border)]"
+                  className="w-12 h-12 rounded-full object-cover border border-[var(--color-border)]"
                 />
 
-                <div>
+                <div className="space-y-1 md:space-y-0 text-center md:text-left">
                   <h4 className="font-bold text-[var(--color-primary)]">
                     {testimonio.nombre}
                   </h4>
-
                   <span className="text-sm text-[var(--color-text-secondary)]">
                     {testimonio.profesion}
                   </span>

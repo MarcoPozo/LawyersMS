@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-primary-light)] text-white px-6 py-12 font-body">
+    <footer className="bg-[var(--color-primary-light)] text-white px-4 sm:px-6 py-12 font-body">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center md:text-left">
         <div>
           <h3 className="font-titulo text-xl mb-4 text-[var(--color-gold)]">
@@ -25,42 +25,17 @@ export default function Footer() {
             Enlaces
           </h4>
           <ul className="space-y-2 text-sm">
-            <li>
-              <Link
-                to="inicio"
-                smooth
-                duration={500}
-                className="cursor-pointer hover:underline">
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="nosotros"
-                smooth
-                duration={500}
-                className="cursor-pointer hover:underline">
-                Nosotros
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="servicios"
-                smooth
-                duration={500}
-                className="cursor-pointer hover:underline">
-                Servicios
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="contacto"
-                smooth
-                duration={500}
-                className="cursor-pointer hover:underline">
-                Contacto
-              </Link>
-            </li>
+            {["inicio", "nosotros", "servicios", "contacto"].map((seccion) => (
+              <li key={seccion}>
+                <Link
+                  to={seccion}
+                  smooth
+                  duration={500}
+                  className="cursor-pointer hover:underline">
+                  {seccion.charAt(0).toUpperCase() + seccion.slice(1)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

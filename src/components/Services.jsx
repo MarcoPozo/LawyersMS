@@ -46,7 +46,7 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="bg-[var(--color-primary)] text-white px-6 py-20 md:py-28 font-body">
+      className="bg-[var(--color-primary)] text-white px-4 sm:px-6 py-20 md:py-28 font-body">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function Services() {
           Nuestros Servicios
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 mb-12">
           {servicios.map((servicio, idx) => (
             <motion.div
               key={idx}
@@ -70,9 +70,11 @@ export default function Services() {
                 {servicio.icon}
               </div>
 
-              <h3 className="text-lg font-semibold mb-2">{servicio.title}</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-2">
+                {servicio.title}
+              </h3>
 
-              <p className="text-sm text-[var(--color-text-secondary)]">
+              <p className="text-sm sm:text-base text-[var(--color-text-secondary)]">
                 {servicio.desc}
               </p>
             </motion.div>
@@ -83,7 +85,8 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true }}
+          className="text-center">
           <Link
             to="contacto"
             smooth

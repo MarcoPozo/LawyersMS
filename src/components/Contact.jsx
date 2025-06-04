@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="w-full bg-[var(--color-primary)] text-white px-6 py-20 md:py-28 font-body">
+      className="w-full bg-[var(--color-primary)] text-white px-4 sm:px-6 py-20 md:py-28 font-body">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function Contact() {
               <label className="block mb-1 text-sm text-white">Mensaje</label>
               <textarea
                 rows="5"
-                className="w-full px-4 py-2 border border-[var(--color-border)] rounded-md bg-transparent text-white outline-none focus:ring-2 focus:ring-[var(--color-gold)]"></textarea>
+                className="resize-none w-full px-4 py-2 border border-[var(--color-border)] rounded-md bg-transparent text-white outline-none focus:ring-2 focus:ring-[var(--color-gold)]"></textarea>
             </div>
 
             <button
@@ -53,7 +53,7 @@ export default function Contact() {
           </motion.form>
 
           <motion.div
-            className="w-full md:w-1/2 h-[350px] md:h-auto"
+            className="w-full md:w-1/2 min-h-[250px] sm:min-h-[300px] md:h-auto"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}

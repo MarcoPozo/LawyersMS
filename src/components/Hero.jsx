@@ -6,12 +6,12 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full min-h-[90vh] h-screen bg-cover bg-center font-body"
+      className="relative w-full min-h-[90vh] xl:min-h-[80vh] h-screen bg-cover bg-center font-body"
       style={{ backgroundImage: `url(${heroImg})`, color: "var(--color-text)" }}>
       <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-        <div className="w-full px-6 sm:px-8 md:px-10 xl:px-0 flex flex-col items-start justify-center text-bg max-w-6xl mx-auto">
+        <div className="w-full px-6 sm:px-8 md:px-10 xl:px-0 flex flex-col items-center md:items-start justify-center text-bg max-w-6xl mx-auto text-center md:text-left">
           <motion.h1
-            className="text-4xl sm:text-5xl lg:text-6xl mb-6 leading-tight font-titulo"
+            className="text-3xl sm:text-5xl lg:text-6xl mb-6 leading-tight font-titulo"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}>
@@ -19,7 +19,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-lg sm:text-xl max-w-2xl mb-8"
+            className="text-base sm:text-xl max-w-2xl mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2 }}>
