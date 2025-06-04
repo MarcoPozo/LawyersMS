@@ -26,7 +26,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-titulo mb-4 text-[var(--color-primary)]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-titulo mb-4 text-[var(--color-text)]">
             Comprometidos con tu defensa
           </h2>
 
