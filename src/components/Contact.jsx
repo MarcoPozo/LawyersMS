@@ -60,7 +60,7 @@ export default function Contact() {
             viewport={{ once: true }}>
             <iframe
               title="Ubicación"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9084040547173!2d-79.93592742593043!3d-2.1482315372285784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6da57ff88903%3A0x9cf4c01d8fa6e272!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses-419!2sec!4v1717528414000!5m2!1ses-419!2sec"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199017.95030458167!2d-80.1449192672192!3d-2.152149223310307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e1!3m2!1ses!2sec!4v1749068295742!5m2!1ses!2sec"
               width="100%"
               height="100%"
               allowFullScreen=""
